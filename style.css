@@ -6,21 +6,26 @@ html, body {background: #ededed; font-family: 'Times', helvetica, arial, sans-se
     padding: 0 15px;
     margin: 0 auto;
 }
+
 #photo img{
     border-radius: 50%;
     width: 15%;
+    height: 15%;
     float: left;
 }
+#contacts{
+    font-size: 0.9em;
+}
 #name{
-    float: right;
-    text-align: left;
-    width: 83%;
-    margin: auto 0;
+    padding: 15px;
+}
+#contacts ul{
+    list-style-type: none;
 }
 .thickLine{
     margin-top: 10px;
     border-bottom: solid brown 2px;
 }
-.clear{
+.clear {
     clear: both;
 }

@@ -1,6 +1,26 @@
+html, body {background: #ededed; font-family: 'Times', helvetica, arial, sans-serif; font-size: 16px; color: #222;}
+
 .container {
     width: 100%;
     max-width: 1024px;
     padding: 0 15px;
     margin: 0 auto;
+}
+#photo img{
+    border-radius: 50%;
+    width: 15%;
+    float: left;
+}
+#name{
+    float: right;
+    text-align: left;
+    width: 83%;
+    margin: auto 0;
+}
+.thickLine{
+    margin-top: 10px;
+    border-bottom: solid brown 2px;
+}
+.clear{
+    clear: both;
 }

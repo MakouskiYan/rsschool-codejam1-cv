@@ -30,8 +30,133 @@
 
     </header>
     <div class="main">
-        <div class="container"></div>
+        <div class="container">
+            <section>
+                <article>
+                    <div class="sectionTitle">
+                        <h1>Personal Profile</h1>
+                    </div>
 
+                    <div class="sectionContent">
+                        <p>My name is Yan i'm about 22 years old.I finished University major in Logistics and have been
+                            worked in this area about 3 years.
+                            My first acquaintance with programming started two years ago with Python. I was interested
+                            to make small programms just for fun. Then I decided
+                            that iw would be cool if I can do something more than small programms and started to find
+                            myself in Programming Languages and some kind of Learning Path
+                            for my target -- become the best developer in the World! So, from Septermber I started
+                            learning Javascript,HTML and CSS to become a Junior
+                            Front-End Developer. I believe that in a few month I will learn how to make a site from
+                            scratch and will start to work on projects in IT-company. </p>
+                    </div>
+                </article>
+                <div class="clear"></div>
+            </section>
+            <section>
+                <div class="sectionTitle">
+                    <h1>Key Skills</h1>
+                </div>
+
+                <div class="sectionContent">
+                    <ul class="keySkills">
+                        <li>Javascript</li>
+                        <li>HTML 5</li>
+                        <li>CSS3</li>
+                        <li>ES 6</li>
+                        <li>Fluent English</li>
+                        <li>Fast Learning</li>
+                        <li>Stress resistance</li>
+                        <li>Git</li>
+                    </ul>
+                </div>
+                <div class="clear"></div>
+            </section>
+            <section>
+                <div class="sectionTitle">
+                    <h1>Education</h1>
+                </div>
+
+                <div class="sectionContent">
+                    <article>
+                        <h2>CodeCademy</h2>
+                        <p class="subDetails">HTML CSS JS</p>
+                        <p>My first steps in my Learning Path to become Front-End Developer.</p>
+                    </article>
+                    <article>
+                        <h2>HTMLAcademy</h2>
+                        <p class="subDetails">HTML/CSS and JS</p>
+                        <p>Raised to a new level my kowledge about Front-End and had a good practise there.</p>
+                    </article>
+                    <article>
+                        <h2>CodeWars</h2>
+                        <p class="subDetails">JS and Python</p>
+                        <p>Here i learning constantly, in CodeWars I'm try pumping my JS skills every day. This is one
+                            of the best resources to practise skills in any
+                            programming language.
+                        </p>
+                    </article>
+                </div>
+                <div class="clear"></div>
+            </section>
+            <section>
+                <div class="sectionTitle">
+                    <h1>My code</h1>
+                </div>
+                <div class="sectionContent">
+                    <article>
+                        <h2>Sudoku Solver</h2>
+                        <p class="subDetails">It was very "fun" task, i made backtracking here</p>
+                        <pre>module.exports = function solveSudoku(matrix) {
+
+                                function solve(matrix) {
+                                    let possibleSolution;//it will be for our recursion
+                                    //go through each element
+                                    for (let i = 0; i < 9; i++) {
+                                        for (let j = 0; j < 9; j++) {
+                                            if (matrix[i][j] == 0) {
+                                                //find the correct number from 1 to 9 in cell 
+                                                for (let n = 1; n < 10; n++) {
+                                                    if (check(matrix, i, j, n)) {
+                                                        matrix[i][j] = n;
+                                                        //make recursion or backtracking with new matrix - where m[i][j]==number;
+                                                        possibleSolution = solve(matrix);
+                                                        if (possibleSolution) { return true; }
+                                                        //if with this n we could not find the solution check for next n in m[i][j]
+                                                        matrix[i][j] = 0;
+                                                    }
+                                                }
+                                                return false; // in no one solution was not correct 
+                                            }
+                                        }
+                                    }
+                                    return true; //hoooray we finished with correct answer!
+                                }
+                            
+                                // check for correct insert at indices
+                                function check(matr, i, j, numb) {
+                                    //xB yB is our start element in block left top el-t
+                                    let xBlock = Math.floor(i / 3) * 3;
+                                    let yBlock = Math.floor(j / 3) * 3;
+                                    // than we check if this number already exists in a row or col or block
+                                    // if it exists than it will return false for this number;
+                                    for (let k = 0; k < 9; k++) {
+                                        if (matr[i][k] == numb || matr[k][j] == numb || matr[xBlock + Math.floor(k / 3)][yBlock + k % 3] == numb) {
+                                            return false;
+                                        }
+                                        
+                                    }
+                                    return true;//if number match all our rules (row col block)
+                                    
+                                }
+                            
+                                solve(matrix);
+                                return matrix;
+                            }</pre>
+                    </article>
+                </div>
+        </div>
+        </section>
+    </div>
     </div>
     <footer>
         <div class="container"></div>

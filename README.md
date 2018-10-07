@@ -1,0 +1,1 @@
+This is my first CodeJam, do not judge strictly.
